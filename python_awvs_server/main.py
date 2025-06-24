@@ -6,8 +6,8 @@ from mcp.server.fastmcp import FastMCP
 from datetime import datetime
 
 # Acunetix API 配置
-ACUNETIX_API_URL = "https://149.104.26.25:3443/api/v1"
-ACUNETIX_API_KEY = "1986ad8c0a5b3df4d7028d5f3c06e936c30f8ff9cb100400babe9d5bc739baaf9"
+ACUNETIX_API_URL = "https://localhost:3443/api/v1"
+ACUNETIX_API_KEY = "your_api_key_here"
 headers = {"X-Auth": ACUNETIX_API_KEY, "Content-type": "application/json;charset=utf8"}
 
 # 初始化 MCP Server
