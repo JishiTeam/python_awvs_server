@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  awvs-server:
+    build: .
+    ports:
+      - "9002:8000"  # 将容器的8000端口映射到主机的9001端口
+    volumes:
+      - .:/app  # 将当前目录挂载到容器的/app目录，方便代码更新
+    environment:
+      - FOFA_KEY=b8e464fc6ef9270d4a101fa30f29a1b7  # 设置FOFA API密钥
+    command: python main.py
